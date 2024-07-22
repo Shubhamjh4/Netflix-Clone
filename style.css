@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.main {
+    background-image: url(assets/images/IN-en-20240708-POP_SIGNUP_TWO_WEEKS-perspective_WEB_34324b52-d094-482b-8c2a-708dc64c9065_small.jpg);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;  
+}
+
+.main > .box {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Black with opacity */
+    position: absolute;
+    top: 0;
+    left: 0; /* Ensure it covers the full width */
+    right: 0; /* Ensure it covers the full width */
+    z-index: 0; /* Place behind nav */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* Adjust for space between items */
+    align-items: center;
+    height: 18vh;
+    width: 100%;
+    position: relative; /* Keep nav on top of the box */
+    z-index: 1; /* Ensure nav is above the box */
+}
+
+.button1{
+    min-height: 5vh;
+    min-width: 10vw;
+    border-radius: 2px;
+    border-color: white;
+    border: 1px;
+    background-color: rgba(46, 39, 39, 0.7);
+    color: white;
+    margin-right: 10px;
+
+}
+.button2{
+    min-height: 5vh;
+    min-width: 10vw;
+    border-radius: 2px;
+    border-color: white;
+    border: 1px;
+    background-color: rgb(218, 12, 12);
+    color: white;
+
+}
+.content{
+    height: 500px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: sans-serif;
+    padding: 30px;
+}
+.content .h1{
+    font-weight: 900;
+    font-size: 46px;
+}
+.content .h2{
+    font-size: 26px;
+    font-weight: 300;
+}
+.content .h3{
+    font-size: 20px;
+    font-weight: 200;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button .input{
+    opacity: 0.6;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 4px;
+    border-color: transparent;
+    min-height: 8vh;
+    min-width: 27vw;
+    padding: 3px 8px;
+    margin: 9px;
+}
+.button .input::placeholder{
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    
+}
+.button .button3{
+    min-height: 8vh;
+    min-width: 16vw;
+    background-color: rgb(218, 12, 12);
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+    border-color: transparent;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 50vw;
+    margin: auto;
+    color: white; 
+    justify-content: center;
+    align-items: center ;
+}
+.secimg{
+    position: relative;
+}
+
+.secimg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.secimg video{
+    width: 26vw;
+    position: absolute;
+    top: 51px;
+    right: 0;
+
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+section.first > div :nth-child(1){
+    font-size: 33px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+section.first > div :nth-child(2){
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.secimg2 {
+    position: relative;
+    margin-top: 30px;
+}
+
+.secimg2 img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg2 video {
+    width: 22vw;
+    position: absolute;
+    top: 37px;
+    bottom: 80;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.faq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+.faqbox{
+    display: flex;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    padding: 20px 20px;
+    max-width: 40vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+.faq h2{
+    text-align: center;
+    font-family: sans-serif;
+}
+.faqbox:hover{
+    background-color: rgb(87, 86, 86);
+    cursor: pointer;
+}
+.faqbtn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.faqbutton{
+    height: 100px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: sans-serif;
+    padding: 30px;
+}
+.faqbutton .inputfaq{
+    opacity: 0.6;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 4px;
+    border-color: transparent;
+    min-height: 8vh;
+    min-width: 27vw;
+    padding: 3px 8px;
+    margin: 9px;
+}
+.faqbutton .inputfaq::placeholder{
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    
+}
+.faqbutton .button3faq{
+    min-height: 8vh;
+    min-width: 16vw;
+    background-color: rgb(218, 12, 12);
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+    border-color: transparent;
+}
+footer {
+    color: white;
+    max-width: 30vw;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+footer .questions {
+    padding: 50px 0;
+    font-family: sans-serif;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    grid-gap: 40px;
+;
+}
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+.footer a{
+    color: white;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        text-align: center; /* Center align text */
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items */
+        align-items: center; /* Center nav items */
+        padding: 10px; /* Add padding for spacing */
+    }
+
+    .button1, .button2, .button3 {
+        min-width: 90%; /* Wider buttons on small screens */
+        margin: 5px 0; /* Margin for spacing */
+    }
+
+    .content {
+        padding: 15px; /* Reduce padding for smaller screens */
+        text-align: center; /* Center align content text */
+    }
+
+    .faqbox {
+        flex-direction: column; /* Stack FAQ items vertically */
+        align-items: flex-start; /* Align items to start */
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
+    .faqbutton {
+        flex-direction: column; /* Stack button and input vertically */
+        align-items: center; /* Center align input and button */
+    }
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 28px; /* Smaller heading size */
+    }
+
+    .h2 {
+        font-size: 20px; /* Smaller subheading size */
+    }
+
+    .h3 {
+        font-size: 16px; /* Smaller description size */
+    }
+
+    .button .input {
+        min-width: 90%; /* Wider input field */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .faqbtn {
+        font-size: 20px; /* Adjust button text size */
+    }
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.footer a {
+    color: white;
+}
